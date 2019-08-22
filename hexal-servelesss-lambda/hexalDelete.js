@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
    };
   
     try {
-      const data = await documentClient.put(params).promise();
+      const data = await documentClient.delete(params).promise();
       responseBody = JSON.stringify(data);
       statusCode = 201;
     } catch (error) {

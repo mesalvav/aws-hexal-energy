@@ -1,0 +1,27 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+ui-react-hexal-serverless/node_modules
+ui-react-hexal-serverless/.pnp
+ui-react-hexal-serverless/.pnp.js
+
+# testing
+ui-react-hexal-serverless/coverage
+
+# production
+ui-react-hexal-serverless/build
+
+# misc
+.DS_Store
+
+ui-react-hexal-serverless/.DS_Store
+ui-react-hexal-serverless/.env.local
+ui-react-hexal-serverless/.env.development.local
+ui-react-hexal-serverless/.env.test.local
+ui-react-hexal-serverless/.env.production.local
+
+ui-react-hexal-serverless/npm-debug.log*
+ui-react-hexal-serverless/yarn-debug.log*
+ui-react-hexal-serverless/yarn-error.log*
+
+ui-react-hexal-serverless/INgitignore
