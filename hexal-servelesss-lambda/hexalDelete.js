@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
   
   const params = {
     TableName: "Products",
-    Item: { id:  "12345", productname: "Solar panels"}
+    Key: { id:  "12345"}
    };
   
     try {
@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
       responseBody = JSON.stringify(data);
       statusCode = 201;
     } catch (error) {
-      responseBody = `unable to put product: ${error}`;
+      responseBody = `unable to Delete product: ${error}`;
       statusCode = 403;
     }
     const response = { 
