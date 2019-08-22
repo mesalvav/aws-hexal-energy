@@ -15,11 +15,11 @@ exports.handler = async (event, context) => {
    };
   
     try {
-      const data = await documentClient.delete(params).promise();
-      responseBody = JSON.stringify(data);
-      statusCode = 204;
+      const data = await documentClient.scan(params).promise();
+      responseBody = JSON.stringify(data.Items);
+      statusCode = 200;
     } catch (error) {
-      responseBody = `unable to Delete product: ${error}`;
+      responseBody = `unable to Get product: ${error}`;
       statusCode = 403;
     }
     const response = { 
