@@ -15,7 +15,7 @@ export default class ProductAdmin extends Component {
 
   handleEditSave = event => {
     event.preventDefault();
-    this.setState({ isEditMode: false });
+    this.setState({ isEditMode: false }); 
     this.props.handleUpdateProduct(this.props.id, this.state.updatedproductname);
   }
 

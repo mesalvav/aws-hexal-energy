@@ -70,7 +70,7 @@ export default class ProductAdmin extends Component {
       console.log(`An error has occurred: ${err}`);
     }
   }
-
+ 
   onAddProductNameChange = event => this.setState({ newproduct: { ...this.state.newproduct, "productname": event.target.value } });
   onAddProductIdChange = event => this.setState({ newproduct: { ...this.state.newproduct, "id": event.target.value } });
 
