@@ -2,5 +2,9 @@
 ### Microservice pattern following a tutorial at:
 https://www.youtube.com/watch?v=VGerk8hrP9U&t=594s
 
-check hosted result:
+### check hosted result:
 http://hexalpowered.com.s3-website.us-east-2.amazonaws.com
+
+CRUD in Products Model in the ADMIN page. 
+NO Sign in - out , Yet!
+
